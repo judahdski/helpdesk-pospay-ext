@@ -9,8 +9,8 @@ const Accordion = ({ title, content }) => {
 
     return (
         <>
-            <button className={`flex justify-between items-center w-full py-4 px-6 ${isOpen ? 'bg-cyan-50' : 'bg-white'}`} onClick={toggleAccordion}>
-                <p className={`text-lg ${isOpen ? 'text-blue-400' : ''}`}>{title}</p>
+            <button className={`flex justify-between items-center gap-2 w-full py-4 px-6 ${isOpen ? 'bg-cyan-50' : 'bg-white'}`} onClick={toggleAccordion}>
+                <p className={`text-lg text-left ${isOpen ? 'text-blue-400' : ''}`}>{title}</p>
                 <div className="flex items-center justify-center">
                     <i className={`fa-solid fa-chevron-down ${isOpen ? 'rotate-180' : ''} transition text-gray-500 text-xs`} />
                 </div>

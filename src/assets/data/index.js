@@ -29,26 +29,31 @@ export const popularQuestions = [
 
 export const topics = [
     {
+        id: 'akun_dan_profil',
         title: 'Akun dan Profil',
         iconClass: 'fa-user',
         colorTheme: 'text-blue-400',
     },
     {
+        id: 'tentang_pospay',
         title: 'Tentang POSPAY',
         iconClass: 'fa-circle-info',
         colorTheme: 'text-blue-400',
     },
     {
+        id: 'transaksi_pembayaran',
         title: 'Transaksi & Pembayaran',
         iconClass: 'fa-receipt',
         colorTheme: 'text-yellow-400',
     },
     {
+        id: 'saldo_top-up',
         title: 'Saldo & Top-Up',
         iconClass: 'fa-circle-plus',
         colorTheme: 'text-green-400',
     },
     {
+        id: 'faq_lainnya',
         title: 'FAQ Lainnya',
         iconClass: 'fa-circle-question',
         colorTheme: 'text-blue-400',
