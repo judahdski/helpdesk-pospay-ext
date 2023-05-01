@@ -9,11 +9,11 @@ function App() {
             <header className="w-full bg-[#F75E20]">
                 <img src={logo} className='h-12' />
             </header>
-            <div className="w-full pt-4 pb-8 flex flex-col items-center gap-4 bg-gradient-to-r from-[#F58158] to-[#F75E20] text-white">
-                <h3 className="text-4xl">Ada yang bisa dibantu?</h3>
+            <div className="w-full pt-4 pb-8 flex flex-col items-center gap-4 bg-gradient-to-r from-[#F58158] to-[#F75E20]">
+                <h3 className="text-xl text-white">Ada yang bisa dibantu?</h3>
                 <div className="relative">
-                    <input type="text" placeholder="Butuh bantuan?" className="w-[600px] h-10 rounded-lg px-4" />
-                    <i class="fa-solid fa-magnifying-glass absolute right-4 inset-y-1/4"></i>
+                    <input type="text" placeholder="Butuh bantuan?" className="w-[600px] h-10 rounded-lg px-4 shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-300" />
+                    <i class="fa-solid fa-magnifying-glass text-slate-500 absolute right-4 top-1/2 -translate-y-1/2"></i>
                 </div>
             </div>
             <div className="max-w-[800px] w-full p-4">
