@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import logo from './assets/pospay.png';
 import DetailTopic from './components/DetailTopic';
 import Home from './components/Home';

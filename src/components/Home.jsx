@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Accordion from './ExpandCollapse';
+import Accordion from './Accordion';
 import { popularQuestions, topics } from '../assets/data/index';
 import { NavLink } from 'react-router-dom';
 

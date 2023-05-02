@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, NavLink, useParams } from 'react-router-dom';
-import { topics } from '../assets/data';
+import { popularQuestions, topics } from '../assets/data';
+import Accordion from './Accordion';
 
 const DetailTopic = () => {
     const { idTopic } = useParams();
 
-    const currentTopic = topics.filter(topic => topic.id === idTopic)[0];
+    const currentTopic = topics.filter((topic) => topic.id === idTopic)[0];
 
     return (
         <div className="bg-white w-full max-w-5xl mt-2 lg:mt-8 flex flex-col lg:flex-row gap-4">
@@ -26,21 +27,14 @@ const DetailTopic = () => {
                     })}
                 </div>
             </div>
-            <div className='bg-white w-full lg:w-4/6 border-l-[2px] border-slate-200 py-4 px-6'>
-                <p><span className="text-blue-600">PUSAT BANTUAN</span> / {currentTopic.title.toUpperCase()}</p>
-                <div className='mt-4'>
-                    <div className="flex justify-between items-center py-4 px-2 border-b-2">
-                        Subtopics 1
-                        <i class="fa-solid fa-chevron-right text-slate-400"></i>
-                    </div>
-                    <div className="flex justify-between items-center py-4 px-2 border-b-2">
-                        Subtopics 2
-                        <i class="fa-solid fa-chevron-right text-slate-400"></i>
-                    </div>
-                    <div className="flex justify-between items-center py-4 px-2 border-b-2">
-                        Subtopics 3
-                        <i class="fa-solid fa-chevron-right text-slate-400"></i>
-                    </div>
+            <div className="bg-white w-full lg:w-4/6 border-l-[2px] border-slate-200 py-4 px-6">
+                <p>
+                    <span className="text-blue-600">PUSAT BANTUAN</span> / {currentTopic.title.toUpperCase()}
+                </p>
+                <div className="mt-6 rounded-md overflow-hidden border">
+                    {currentTopic.questions.map((question, index) => (
+                        <Accordion key={index} title={question.question} content={question.answer} />
+                    ))}
                 </div>
             </div>
         </div>

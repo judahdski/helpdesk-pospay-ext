@@ -15,7 +15,7 @@ const Accordion = ({ title, content }) => {
                     <i className={`fa-solid fa-chevron-down ${isOpen ? 'rotate-180' : ''} transition text-gray-500 text-xs`} />
                 </div>
             </button>
-            <div className={`px-6 py-4 bg-white ${isOpen ? '' : 'hidden'} transition`}>
+            <div className={`px-6 py-4 bg-slate-50 ${isOpen ? '' : 'hidden'} transition`}>
                 <p className="text-gray-600">{content}</p>
             </div>
         </>
